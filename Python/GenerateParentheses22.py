@@ -14,5 +14,6 @@ class Solution:
         temp = ""
         gen(temp,n,0,0,0)
         return l
+    
 s = Solution()
 print(s.generateParenthesis(2))

@@ -97,7 +97,7 @@ class Solution:
         for i in range(len(nums)-1):
             if(nums[i] == 1):
                 d += 1
-                            if (d > s):
+                if (d > s):
                     s = d
                 d = 1
         if (d > s):
@@ -115,4 +115,6 @@ class Solution:
                 c = 0
             m = max(m,c)
         return m
-        else:
+
+
+

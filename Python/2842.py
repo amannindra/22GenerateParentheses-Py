@@ -17,4 +17,3 @@ class Solution:
                 if (out == oin):
                     output += 1
         return output
-                        

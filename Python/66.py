@@ -1,7 +1,5 @@
 class Solution:
     def plusOne(self, digits):
-        
-        
         output = ""
         for i in range(len(digits)):
             output += str(digits[i])

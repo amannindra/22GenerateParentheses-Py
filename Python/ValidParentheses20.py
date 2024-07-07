@@ -61,4 +61,20 @@ print(stack)
     
     
 #Version 3
-#Back to the beginning
+#Work on this problem for the past hour. Ended up watching a video.
+
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        if (len(s) % 2 == 0):    
+            mapping = {")": "(", "}": "{", "]": "["}
+            for i in s:
+                if i in mapping.values():
+                    stack.append(i)
+                else:
+                    if not stack or mapping[i] != stack.pop():
+                        return False
+            return not stack
+        else:
+            return False
+        
